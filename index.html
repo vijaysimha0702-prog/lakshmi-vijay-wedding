@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lakshmi & Vijay Simha Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="petals" class="petals"></div>
+
+  <button id="musicBtn" class="music-btn">♪</button>
+  <audio id="bgMusic" loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <section id="coverScreen" class="cover-screen">
+    <div class="cover-bg"></div>
+    <div class="corner top-left">🌸</div>
+    <div class="corner top-right">🌸</div>
+    <div class="corner bottom-left">🌺</div>
+    <div class="corner bottom-right">🌺</div>
+
+    <div id="openInvite" class="wax-card">
+      <div class="wax-circle">
+        <span>Lakshmi</span>
+        <strong>&</strong>
+        <span>Vijay</span>
+      </div>
+      <p>Tap to Open</p>
+    </div>
+  </section>
+
+  <main id="site" class="hidden">
+
+    <section class="page invitation" id="home">
+      <div class="arch-card reveal">
+        <p class="om">ॐ</p>
+        <p class="sub">|| Sri Ganeshaya Namaha ||</p>
+        <p class="small">With the blessings of our elders and the grace of Lord Ganesha</p>
+        <h1>Lakshmi</h1>
+        <span>with</span>
+        <h1>Vijay Simha</h1>
+        <p class="invite-msg">We cordially invite you to share in the happiness of our wedding celebration.</p>
+        <p class="date">26 • 08 • 2026</p>
+      </div>
+    </section>
+
+    <section class="page meet" id="couple">
+      <p class="eyebrow">Bride & Groom</p>
+      <h2>Meet the Couple</h2>
+
+      <div class="couple-profile reveal">
+        <img src="bride.jpg" alt="Bride Lakshmi">
+        <p class="role">The Bride</p>
+        <h3>Lakshmi</h3>
+        <p>Lakshmi is graceful, joyful, and brings warmth to every moment.</p>
+      </div>
+
+      <div class="couple-profile reveal">
+        <img src="groom.jpg" alt="Groom Vijay Simha">
+        <p class="role">The Groom</p>
+        <h3>Vijay Simha</h3>
+        <p>Vijay is loving, confident, and believes in creating beautiful memories.</p>
+      </div>
+    </section>
+
+    <section class="page timeline" id="story">
+      <p class="eyebrow">Our Journey</p>
+      <h2>Where It All Began</h2>
+
+      <div class="timeline-box">
+        <div class="t-item reveal">
+          <span>❤️</span>
+          <div>
+            <h3>First Chapter</h3>
+            <p>What began as simple conversations slowly turned into a beautiful bond.</p>
+          </div>
+        </div>
+        <div class="t-item reveal">
+          <span>💫</span>
+          <div>
+            <h3>Building Our Story</h3>
+            <p>Every smile, every ride, and every little memory brought us closer.</p>
+          </div>
+        </div>
+        <div class="t-item reveal">
+          <span>💍</span>
+          <div>
+            <h3>Forever Begins</h3>
+            <p>With blessings and love, we are ready to begin our forever.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page save-date" id="save">
+      <div class="save-card reveal">
+        <p class="eyebrow pink">Save The Date</p>
+        <h2>26 August 2026</h2>
+        <div id="timer" class="timer">
+          <div><b id="days">00</b><span>Days</span></div>
+          <div><b id="hours">00</b><span>Hours</span></div>
+          <div><b id="minutes">00</b><span>Minutes</span></div>
+          <div><b id="seconds">00</b><span>Seconds</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page events" id="events">
+      <p class="eyebrow">Wedding Celebrations</p>
+      <h2>Events Schedule</h2>
+
+      <article class="event-card reception reveal">
+        <h3>Reception</h3>
+        <p>An elegant evening to celebrate our union with loved ones.</p>
+        <b>25 August 2026</b>
+        <span>7:00 PM onwards</span>
+      </article>
+
+      <article class="event-card muhurtam reveal">
+        <h3>Muhurtam</h3>
+        <p>The sacred wedding ceremony.</p>
+        <b>26 August 2026</b>
+        <span>4:00 AM – 5:00 AM</span>
+      </article>
+    </section>
+
+    <section class="page gallery-page" id="gallery">
+      <p class="eyebrow pink">Captured Moments</p>
+      <h2>Moments of Love</h2>
+      <p class="gallery-sub">Hover or tap a picture to highlight the memory</p>
+
+      <div class="gallery-row">
+        <div class="memory-card active" tabindex="0">
+          <img src="gallery1.jpg" alt="Memory 1">
+          <p>A Moment of Peace ❤️</p>
+        </div>
+        <div class="memory-card" tabindex="0">
+          <img src="gallery2.jpg" alt="Memory 2">
+          <p>Our First Adventure 🏍️</p>
+        </div>
+        <div class="memory-card" tabindex="0">
+          <img src="gallery3.jpg" alt="Memory 3">
+          <p>Walking Towards Forever 🤍</p>
+        </div>
+        <div class="memory-card" tabindex="0">
+          <img src="gallery4.jpg" alt="Memory 4">
+          <p>Love in Every Step ❤️</p>
+        </div>
+        <div class="memory-card" tabindex="0">
+          <img src="gallery5.jpg" alt="Memory 5">
+          <p>Captured Smiles 🌸</p>
+        </div>
+        <div class="memory-card" tabindex="0">
+          <img src="gallery6.jpg" alt="Memory 6">
+          <p>Shared Happiness 💕</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="page venue" id="venue">
+      <div class="venue-card reveal">
+        <p class="eyebrow pink">Venue</p>
+        <h2>Shree Madhura Meenakshi<br>Kalyana Mandapam</h2>
+        <p>Hindupur</p>
+        <a target="_blank" href="https://www.google.com/maps/search/?api=1&query=Shree%20Madhura%20Meenakshi%20Kalyana%20Mandapam%20Hindupur">View on Map 📍</a>
+      </div>
+    </section>
+
+    <section class="page final" id="final">
+      <div class="final-card reveal">
+        <h2>Can’t Wait To Celebrate With You!</h2>
+        <p>Lakshmi ♥ Vijay Simha</p>
+        <a id="whatsapp" href="#" target="_blank">Share on WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
